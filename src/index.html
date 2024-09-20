@@ -8,25 +8,475 @@
     <meta name="description" content="Project 1" />
 
     <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
   </head>
 
   <body>
-    <!-- Your HTML goes here -->
-    <h1 class="display-2 text-center my-5 py-5 mx-auto w-75">
-      <span>
-        WEB 2890:&nbsp;
-        <i class="bi bi-filetype-html text-primary"></i>/ <i class="bi bi-filetype-css text-danger"></i>/
-        <i class="bi bi-filetype-js text-success"></i>
-      </span>
-      <span class="d-block pt-5">
-        <img src="images/logo.svg" alt="logo horizontal" />
-      </span>
-      <span class="d-block py-5">
-        Project 1: The <span class="bg-dark text-light px-5 fw-bold">CarDeal</span> project
-      </span>
-      <a href="_contents.html" class="link-primary">Link to the Contents file</a>
-    </h1>
+    <!-- SECTION 1 HEADER & NAVBAR-->
+    <!-- Navbar with logo -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <!-- Logo added to navbar -->
+      <a class="navbar-brand" href="#">
+        <img src="images/new_logo.svg" alt="CarDeal Logo" width="120" height="auto">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <script type="module" src="./javascripts/main.js"></script>
+  <!-- Hero Section -->
+  <!-- Hero Section -->
+<section class="hero-section text-white d-flex align-items-center" style="background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
+  <div class="container">
+    <div class="row">
+      <!-- Hero Text -->
+      <div class="col-lg-6">
+        <h1 class="display-4">We buy <span class="text-primary">"any"</span> car</h1>
+        <p class="lead">Get an instant valuation and sell your car fast with CarDeal.</p>
+      </div>
+
+      <!-- Form Section -->
+      <div class="col-lg-6">
+        <div class="bg-dark p-4 rounded">
+          <form>
+            <div class="mb-3">
+              <label for="car-make" class="form-label">Car Make</label>
+              <input type="text" class="form-control" id="car-make" placeholder="e.g., Toyota">
+            </div>
+            <div class="mb-3">
+              <label for="car-model" class="form-label">Car Model</label>
+              <input type="text" class="form-control" id="car-model" placeholder="e.g., Camry">
+            </div>
+            <div class="mb-3">
+              <label for="car-year" class="form-label">Year</label>
+              <input type="text" class="form-control" id="car-year" placeholder="e.g., 2015">
+            </div>
+            <div class="mb-3">
+              <label for="car-mileage" class="form-label">Mileage</label>
+              <input type="text" class="form-control" id="car-mileage" placeholder="e.g., 50,000 miles">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Get an Offer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works py-5">
+  <div class="container">
+    <h2>How It Works</h2>
+
+    <div class="steps-container">
+      <!-- Step 1 -->
+      <div class="step">
+        <div class="step-number">1</div>
+        <h5>Get Your Free Quote</h5>
+        <p>Fill out a form with your car's details to get an instant online valuation.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step">
+        <div class="step-number">2</div>
+        <h5>Review Your Offer</h5>
+        <p>Receive an offer and review it at your convenience. The offer is valid for 7 days.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step">
+        <div class="step-number">3</div>
+        <h5>Schedule an Inspection</h5>
+        <p>Schedule a time to inspect your car and confirm the offer with one of our experts.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step">
+        <div class="step-number">4</div>
+        <h5>Finalize the Deal</h5>
+        <p>After inspection, finalize the paperwork and prepare to hand over the car.</p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step">
+        <div class="step-number">5</div>
+        <h5>Get Paid Instantly</h5>
+        <p>Get paid on the spot via bank transfer or check, right after you finalize the deal.</p>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="step">
+        <div class="step-number">6</div>
+        <h5>We Pick Up Your Car</h5>
+        <p>We’ll take care of the car pickup from your location at no additional cost.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Advantages Section -->
+<section class="advantages py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Intro paragraph column -->
+      <div class="col-md-6">
+        <h2 class="mb-4">Advantages of Selling Your Car to CarDeal</h2>
+        <p>Cardeal offers a simple, safe, and profitable way to sell your car,
+           eliminating the hassles associated with traditional dealerships and 
+           private buyers. With Cardeal, you can enjoy a streamlined selling 
+           experience that prioritizes your convenience and peace of mind. 
+           Our expert team provides you with a fair valuation, ensuring you 
+           get the best possible price for your vehicle. Plus, we handle all the paperwork, 
+           making the process quick and effortless from start to finish.</p>
+      </div>
+      <!-- list column -->
+      <div class="col-md-6">
+        <ul class="creative-list">
+          <li> Competitive offers, often higher than traditional dealers.</li>
+          <li> We buy less-than-perfect cars with mechanical or cosmetic issues.</li>
+          <li> Sell your car without any obligation to purchase a new one from us.</li>
+          <li> Fast, secure process without dealing with shady buyers or scammers.</li>
+          <li> Locations in all 50 states, making it convenient to drop off or have your car picked up.</li>
+          <li> We care about our customers and our community, donating meals to charity with every sale.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">What Our Customers Say</h2>
+
+    <!-- Carousel -->
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"> <!-- Adjust the interval -->
+      <div class="carousel-inner">
+        
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-content">
+              <p class="quote">"Honest business. They gave clear explanation every step of their process, even allowing you to be there during inspection of your vehicle. Safest way to sell a car I have ever experienced."</p>
+              <footer class="blockquote-footer">B. Drake, Billings MT</footer>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-content">
+              <p class="quote">"My experience at Cardeal went very well. The manager was very professional, kind, and completely honest in making the offer for my vehicle."</p>
+              <footer class="blockquote-footer">M. Hubbard, Phoenix AZ</footer>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-content">
+              <p class="quote">"WOW! Above and beyond service provided by Cardeal. They gave us exceptional service and a reasonable price for my 2004 Jeep Cherokee."</p>
+              <footer class="blockquote-footer">T. Hogan, Alexandria VA</footer>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-content">
+              <p class="quote">"Very pleased. I had my doubts, but they are on the up and up. I would recommend this site to anyone who wishes to sell their car quickly."</p>
+              <footer class="blockquote-footer">H. Furlano, Atlanta GA</footer>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-content">
+              <p class="quote">"Communication was awesome. They picked up my car at my home, which was convenient since I have three young kids."</p>
+              <footer class="blockquote-footer">A. Moore, Denver CO</footer>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+<!-- Main Selling Point Section -->
+<section class="main-selling-point py-5 text-center" style="background-image: url('images/offer-bg.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <h2 class="text-light">Get the Best Offer for Your Car</h2>
+    <p class="text-light">Our quick and easy process ensures you get a competitive offer for your vehicle within minutes. No hassle, just great deals.</p>
+    <a href="#" class="btn btn-lg btn-primary mt-3">Get an Offer</a>
+  </div>
+</section>
+
+<!-- Recent Purchases Section -->
+<section class="recent-purchases py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Recent Purchases</h2>
+
+    <div class="row">
+      <!-- Car 1: Ford F-150 Truck -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex">
+        <div class="card flex-fill">
+          <img src="images/ford_f150_truck.png" class="card-img-top" alt="Ford F-150 Truck">
+          <div class="card-body">
+            <h5 class="card-title">Ford F-150 Truck</h5>
+            <p><strong>Year:</strong> 2015</p>
+            <p><strong>Miles:</strong> 85,000</p>
+            <p><strong>Price:</strong> $22,500</p>
+            <p><strong>Full Style:</strong> SuperCrew 4x4</p>
+            <p><strong>Condition:</strong> Exterior: Excellent, Interior: Excellent, Mechanical: Excellent</p>
+            <p><strong>MPG:</strong> 18 city, 23 hwy</p>
+            <p class="card-text">A reliable work truck in excellent condition. Towing package included with upgraded tires. Well-maintained.</p>
+            <a href="#" class="btn btn-primary">More Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 2: Ford Fusion -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex">
+        <div class="card flex-fill">
+          <img src="images/ford_fusion.png" class="card-img-top" alt="Ford Fusion">
+          <div class="card-body">
+            <h5 class="card-title">Ford Fusion</h5>
+            <p><strong>Year:</strong> 2010</p>
+            <p><strong>Miles:</strong> 59,000</p>
+            <p><strong>Price:</strong> $8,919</p>
+            <p><strong>Full Style:</strong> 4dr Sedan SE FWD</p>
+            <p><strong>Condition:</strong> Exterior: Excellent, Interior: Excellent, Mechanical: Excellent</p>
+            <p><strong>MPG:</strong> 22 city, 31 hwy</p>
+            <p class="card-text">Low miles and in great condition. Tinted windows and spotless interior. Ideal for a first-time buyer.</p>
+            <a href="#" class="btn btn-primary">More Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 3: Honda Civic Sedan -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex">
+        <div class="card flex-fill">
+          <img src="images/honda_civic_sedan.png" class="card-img-top" alt="Honda Civic Sedan">
+          <div class="card-body">
+            <h5 class="card-title">Honda Civic Sedan</h5>
+            <p><strong>Year:</strong> 2013</p>
+            <p><strong>Miles:</strong> 131,092</p>
+            <p><strong>Price:</strong> $7,900</p>
+            <p><strong>Full Style:</strong> 4dr Sedan Auto LX FWD</p>
+            <p><strong>Condition:</strong> Exterior: Good, Interior: Good, Mechanical: Excellent</p>
+            <p><strong>MPG:</strong> 28 city, 39 hwy</p>
+            <p class="card-text">Reliable commuter vehicle with upgraded stereo and speakers. Very reliable, perfect for a growing family.</p>
+            <a href="#" class="btn btn-primary">More Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 4: Hyundai Elantra -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex">
+        <div class="card flex-fill">
+          <img src="images/hyundai_elantra.png" class="card-img-top" alt="Hyundai Elantra">
+          <div class="card-body">
+            <h5 class="card-title">Hyundai Elantra</h5>
+            <p><strong>Year:</strong> 2016</p>
+            <p><strong>Miles:</strong> 45,000</p>
+            <p><strong>Price:</strong> $9,500</p>
+            <p><strong>Full Style:</strong> 4dr Sedan Auto SE</p>
+            <p><strong>Condition:</strong> Exterior: Excellent, Interior: Excellent, Mechanical: Excellent</p>
+            <p><strong>MPG:</strong> 28 city, 38 hwy</p>
+            <p class="card-text">This Elantra offers fantastic fuel economy with a smooth ride and a comfortable, clean interior. Great for commuting.</p>
+            <a href="#" class="btn btn-primary">More Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 5: Toyota 4Runner -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex">
+        <div class="card flex-fill">
+          <img src="images/toyota_4runner.png" class="card-img-top" alt="Toyota 4Runner">
+          <div class="card-body">
+            <h5 class="card-title">Toyota 4Runner</h5>
+            <p><strong>Year:</strong> 2001</p>
+            <p><strong>Miles:</strong> 179,000</p>
+            <p><strong>Price:</strong> $6,500</p>
+            <p><strong>Full Style:</strong> 4dr SR5 3.4L Auto</p>
+            <p><strong>Condition:</strong> Exterior: Good, Interior: Fair, Mechanical: Excellent</p>
+            <p><strong>MPG:</strong> 17 city, 20 hwy</p>
+            <p class="card-text">This car has been a workhorse. Well maintained with just under 179,000 miles. Looking for a reliable ride? This is it.</p>
+            <a href="#" class="btn btn-primary">More Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0066cc" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0066cc" fill-opacity="1" d="M0,64L48,90.7C96,117,192,171,288,170.7C384,171,480,117,576,96C672,75,768,85,864,101.3C960,117,1056,139,1152,176C1248,213,1344,267,1392,293.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+<!-- FAQ Section -->
+<section class="faq py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+
+      <!-- Question 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What documents do I need to sell my car?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You'll need the car's title, registration, and any maintenance records. Our team will guide you through the rest.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How is the offer for my car determined?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Offers are based on the car's make, model, year, condition, and current market trends.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Do I have to buy a new car from you?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            No, you can sell your car without any obligation to purchase a new one from us.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            How long does the selling process take?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            The entire process can be completed in as little as a few hours, from valuation to payment.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Will you buy cars with mechanical issues?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we consider cars with mechanical or cosmetic issues, and we provide competitive offers regardless.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            What happens after I sell my car?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            After the sale, we handle all paperwork and can assist with the transfer of ownership.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <a href="#" class="btn btn-secondary">View More Questions</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <div class="footer-logo mb-3">
+        <img src="images/new_logo_ver.svg" alt="CarDeal Logo" width="120">
+      </div>
+  
+      <p>&copy; 2024 CarDeal. All rights reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-light">Privacy Policy</a></li>
+        <li class="list-inline-item"><a href="#" class="text-light">Terms of Use</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+
+  <!-- Bootstrap JS -->
+   <!-- Ensure Bootstrap JS is included -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./javascripts/main.js"></script>
   </body>
 </html>
